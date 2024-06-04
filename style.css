@@ -1,0 +1,13 @@
+:root {
+  --Akaya: "Akaya Telivigala", system-ui;
+  --Dangrek: "Dangrek", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.heading {
+  font-family: var(--Dangrek);
+}
