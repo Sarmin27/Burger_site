@@ -8,86 +8,164 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* banner section styles  */
 .banner {
-  background-color: #ffe4b5;
-  max-width: 85%;
-  margin: 0px auto;
+  background-color: hwb(50 70% 4%);
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0px 80px;
 }
 
 .banner .banner-r1 {
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  padding: 0px 80px;
-  /* margin-bottom: 15px; */
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
 }
 .banner .banner-r1 .banner-r1_descryption {
-  max-width: 45%;
-  /* padding: 20px 60px; */
+  max-width: 40%;
 }
 .banner .banner-r1 .banner-r1_img {
-  max-width: 55%;
+  max-width: 60%;
 }
 .banner .banner-r1 .banner-r1_img img {
   max-width: 100%;
 }
 .banner .banner-r1 .banner-r1_descryption .banner-r1_heading {
   font-family: var(--Dangrek);
-  font-size: 46px;
+  /* font-weight: 900; */
+  font-size: 50px;
   color: #0a0339;
+  padding: 10px 0px;
 }
 .banner .banner-r1 .banner-r1_descryption span {
   font-family: var(--Dangrek);
   font-size: 46px;
   color: hwb(39 6% 0%);
 }
-.banner .banner-r1 .banner-r1_descryption .banner-r1_btn {
+.banner .banner-r1 .banner-r1_descryption .banner-r1_paragraph {
+  font-family: var(--Dangrek);
+  max-width: 300px;
+  color: rgb(140, 140, 140);
+}
+.banner .banner-r1 .banner-r1_descryption .banner-r1_btn-container {
+  display: flex;
+  align-items: baseline;
+  gap: 24px;
+}
+.banner .banner-r1 .banner-r1_descryption .banner-r1_btn-container .banner-r1_btn {
   padding: 12px 30px;
   margin: 16px 0px;
   font-family: var(--Dangrek);
   background-color: #0a0339;
   color: white;
-  border: 4px solid hsl(60, 0%, 55%);
+  border: 4px solid rgb(140, 140, 140);
   border-radius: 6px;
 }
+.banner .banner-r1 .banner-r1_descryption .banner-r1_btn-container .audio-btn {
+  color: white;
+  padding: 12px;
+  background-color: hwb(39 6% 0%);
+  border-radius: 50%;
+  border: 4px solid rgb(235, 190, 105);
+}
+
 .banner .banner-r2 {
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  /* padding: 0px 80px; */
+  justify-content: space-around;
+  align-items: center;
+  /* padding: 0px 100px; */
 }
 
 .banner .banner-r2 .banner-r2_img {
-  max-width: 45%;
+  max-width: 40%;
 }
 .banner .banner-r2 .banner-r2_img img {
   max-width: 100%;
-  padding: 0px 100px;
+  /* padding: 0px 100px; */
   background-repeat: no-repeat;
 }
 .banner .banner-r2 .banner-r2_descryption {
   max-width: 60%;
-}
-
-.banner-r2_descryption {
   display: flex;
   justify-content: space-between;
+  /* align-items: center; */
   gap: 30px;
 }
-.banner-r2_descryption1,
-.banner-r2_descryption2 {
+
+.banner .banner-r2 .banner-r2_descryption .banner-r2_descryption1-container,
+.banner .banner-r2 .banner-r2_descryption .banner-r2_descryption2-container {
   background-color: white;
-  max-width: 100%;
-  padding: 10px;
-  border-radius: 10px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  padding: 16px;
+  height: 140px;
+  margin: 0px auto;
 }
-.banner-r2_descryption1,
-.banner-r2_descryption2 {
-  max-width: 50%;
+.circle {
+  height: 75px;
+  width: 75px;
+  background-color: hwb(50 70% 4%);
+  border-radius: 50%;
 }
-.banner-r2_descryption1-heading,
-.banner-r2_descryption2-heading {
+
+.banner-r2_descryption1-container_descryp-heading,
+.banner-r2_descryption2-container_descryp-heading {
+  font-family: var(--Dangrek);
+  max-width: 120px;
+  font-size: 16px;
+  color: #0a0339;
+}
+.banner-r2_descryption1-container_descryp-para,
+.banner-r2_descryption2-container_descryp-para {
+  font-family: var(--Dangrek);
+  max-width: 120px;
+  color: rgb(140, 140, 140);
+}
+.deal {
+  background-color: hwb(50 90% 4%);
+  min-height: 100px;
+  max-width: 150px;
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  bottom: 160px;
+  left: 600px;
+}
+.deal .deal-heading {
   font-family: var(--Dangrek);
   font-size: 16px;
   color: #0a0339;
+}
+.deal .deal-paragraph {
+  font-family: var(--Akaya);
+  max-width: 125px;
+  color: rgb(140, 140, 140);
+}
+.offer {
+  background-color: hwb(39 6% 0%);
+  max-width: 150px;
+  min-height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 400px;
+  right: 180px;
+  rotate: 30deg;
+}
+.offer .offer-heading {
+  font-size: 30px;
+  font-family: var(--Dangrek);
+  margin: 10px;
+  color: white;
+  border-radius: 6px;
 }
